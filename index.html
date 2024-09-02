@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        <p>SPLI</p>
+        <P>TTER</P>
+    </div>
+    <div class="mainbox">
+        <div class="leftbox">
+            <div class="bill">
+                <p>Bill</p>
+                <input type="number" class="billvalue" dir="rtl" placeholder="0" id="myInput" oninput="displayValue()">
+            </div>
+
+            <div class="tip-per">
+                <p>Select Tip %</p>
+                <button class="tipvalper mleft">5%</button>
+                <button class="tipvalper">10%</button>
+                <button class="tipvalper">15%</button>
+                <button class="tipvalper mleft">25%</button>
+                <button class="tipvalper">50%</button>
+                <button class="tipvalper custom">Custom</button>
+            </div>
+
+            <div class="people">
+                <p>Number of People</p>
+                <input type="number" class="peopleCount" dir="rtl" placeholder="0" value="1">
+            </div>
+        </div>
+        <div class="rightbox">
+            <div class="top">
+                <div class="tipamount">
+                    <div class="tipamttext">
+                        <p class="tipPara">Tip Amount</p>
+                        <p style="color: rgb(73, 180, 175);">/ person</p>
+                    </div>
+                    <div class="amtvalue">
+                       <p class="amt">$0.00</p> 
+                    </div>
+                </div>
+                <div class="total">
+                        <div class="totaltxt">
+                            <p class="totalPara">Total</p>
+                            <p style="color: rgb(73, 180, 175);">/ person</p>
+                        </div>
+                        <div class="totalval">
+                           <p class="totaltxtval">$0.00</p> 
+                        </div>
+                </div>
+            </div>
+            <div class="bottom">
+                
+                    <button class="reset">RESET</button>
+            
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
